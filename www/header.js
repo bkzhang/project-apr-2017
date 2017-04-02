@@ -91,8 +91,7 @@ define([
         var cellSelected = document.querySelector('input[name = "ccolors"]:checked').value;
         var id = Utils.getCurrentlyEditingID();
         API.getSchema(id)
-          .done(function(data) {
-            var schema = data;
+          .done(function(schema) {
             var new_schema = {
               "data": schema.data,
               "type": schema.type,

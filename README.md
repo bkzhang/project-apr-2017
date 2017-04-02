@@ -1,62 +1,18 @@
-# Welcome to Klipfolio deCode Project (Apr 2017)
+deCODE Ottawa March 2017
+========================
+[https://hackdecode.io](https://hackdecode.io)
 
-Here are a few things you need to get started.
+### Overview
+###### Site description: 
+> deCODE is an exclusive hackathon which invites selected students to work alongside company engineers to create innovative solutions to problems the companies themselves face.
 
-# Table of Contents
-1. [Git Cheat Sheet](#git-cheat-sheet)
-2. [NPM](#npm)
+Out of 500 applicants, I was one of the 21 handpicked students chosen to work along side the company engineers. I was chosen by the klipfolio team to help build a mobile web app that allows you to create new data visualizations alongside viewing your current ones. This was one of the problems they wanted solved since their current mobile web app does not allow you to create new data visualizations. Since their code is not open source, we had to build the web app from scratch over a short period of 16~17 hours. 
 
-## Git Cheat Sheet
-Here are a few commands to get you started with git.
+Our current build allows you to create new visualizations from chosen csv files. It allows the users to choose specific headers to customize the data they want displayed. The users are also able to delete visualizations they no longer want or to edit their colors and styling.
 
-The first thing you will need to do is clone the repository in to your dev environment.
+### Challenges 
+> These were things that we were not able to complete due to time constraints
 
-To do this, you will need to have git installed.
-Windows Users: https://git-for-windows.github.io/
-Linux Users: https://git-scm.com/download/linux
-Mac Users: https://git-scm.com/download/mac
-
-If you do not already have an SSH key associated with your github account, create one by typing `ssh-keygen` in your terminal, and then add it to your github account. (You can find your public key by doing: `cat ~/.ssh/id_rsa.pub`.
-
-Next, use the following command to clone the repository on to your dev machine:  
-`git clone git@github.com:klipfolio-decode/project-apr-2017.git`
-
-Once the repository has been cloned to your dev environment, you're ready to start coding!
-
-A typical git workflow looks something like the following:  
-`git checkout master` (to start from the master branch)  
-`git pull` (to get the most recent changes)  
-`git checkout -b "your branch name"` (to create and switch to the branch you will be working on)  
-*_make code changes_*  
-`git status` (to see what files have been modified)  
-`git diff` (to see that the changes are what you intend to commit)  
-`git add .` (to add the files to the commit)  
-`git commit -m "your commit message"` (to commit the code)  
-`git push` (to push your commits from your dev environment to the github repository for others to be able to get)  
-*_open pull request on github to be reviewed by a team-mate (or two)_*  
-*_merge the pull request once it's been approved, then delete the branch_*  
-
-If you run into any issues with _Merge Conflicts_ and don't have any experience resolving them, don't hesitate to reach out to one of the Klipfolio team members for help. :smile:  
-
-## NPM
-NPM is a useful tool for dependency management. Install it using the following link: https://nodejs.org/en/  
-
-Once installed, run `npm install` in the root directory of the repo.  
-
-New dependencies can be added by either adding them to the `package.json` file, or by doing `npm install 'packagename' -s`.  
-
-## Get Started
-
-In order to get start, you will need to install the following tool.
-
-- Install NodeJS and NPM for your platform.
-
-To install dependencies:
-
-`npm install`
-
-To run the server:
-
-`npm start`
-
-To verify that your webserver started correct, browse to `http://localhost:8080/hello`.
+1. We wanted the product to be able to display live previews of multiple different visualizations based on the number of headers selected such as pie, line or bar charts.
+2. Alongside the color editing, we wanted to be able to edit the visualizations data after creating it.
+3. We wanted a more user friendly UI by allowing the edit and delete button pop up in a text bubble by tapping anywhere on the visualization itself.
